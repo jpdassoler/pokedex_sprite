@@ -1,0 +1,157 @@
+body {
+  /* background: #efefbb; */
+  background: linear-gradient(to right, rgb(242, 238, 6), rgb(203, 18, 18));
+  color: white;
+  margin: 0;
+  font-family: rubik;
+}
+
+.container {
+  padding: 40px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 54px;
+}
+
+.pokedex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+  padding-inline-start: 0;
+}
+
+.card {
+  list-style: none;
+  padding: 40px;
+  color: #222;
+  text-align: center;
+  border-radius: 20px;
+  position: relative;
+}
+
+.card::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 45%;
+  border-radius: 100%;
+  background-color: #fff;
+  opacity: 0.7;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+}
+
+.steel {
+  background-color: #b5b3c7;
+}
+
+.fire {
+  background-color: #f9523d;
+}
+
+.grass {
+  background-color: #8dc46e;
+}
+
+.electric {
+  background-color: #e9c668;
+}
+
+.water,
+.ice {
+  background-color: #5498f3;
+}
+
+.ground {
+  background-color: #c2a772;
+}
+
+.rock {
+  background-color: #b8a165;
+}
+
+.fairy {
+  background-color: #ff9dff;
+}
+
+.poison {
+  background-color: #9f709a;
+}
+
+.bug {
+  background-color: #a7b737;
+}
+
+.dragon {
+  background-color: #7c6bcc;
+}
+
+.psychic {
+  background-color: #d48097;
+}
+
+.flying {
+  background-color: #90a6dd;
+}
+
+.fighting {
+  background-color: #ab5649;
+}
+
+.normal {
+  background-color: #a8a8a0;
+}
+
+.ghost { 
+  background-color: #6763a6;
+}
+
+.dark {
+  background-color: #707070;
+}
+
+.card:hover {
+  animation: bounce 0.5s linear;
+}
+
+.card-title {
+  text-transform: capitalize;
+  margin-bottom: 0px;
+  font-size: 32px;
+  font-weight: normal;
+  position: relative;
+  z-index: 2;
+}
+
+.card-subtitle {
+  margin-top: 5px;
+  color: #666;
+  font-weight: lighter;
+  position: relative;
+  z-index: 2;
+}
+
+.card-image {
+  height: 180px;
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes bounce {
+  20% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  80% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
